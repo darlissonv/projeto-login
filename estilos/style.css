@@ -31,7 +31,6 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    
 
     background-color: white;
     height: 500px;
@@ -39,16 +38,20 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
     
+    transition: width 0.3s, height, 0.3s;
+    transition-timing-function: ease;
 }
 
 section > div#imagem {
+    display: block;
     height: 200px;
     background: #5f2c82 url(../imagens/eiffel_m.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    
+    background-position: center center;    
 }
 
 section#login > div#formulario {
+    display: block;
+    padding: 10px;
     
 }

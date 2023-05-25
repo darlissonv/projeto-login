@@ -29,25 +29,26 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
-    height: 500px;
-    width: 252px;
+    width: 250px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
-    
-    transition: width 0.3s, height, 0.3s;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.1s, height, 0.1s;
     transition-timing-function: ease;
 }
 
 section > div#imagem {
     display: block;
-    height: 200px;
     background: #5f2c82 url(../imagens/eiffel_m.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;    
+    background-position: center center; 
+    height: 200px;   
 }
 
 section#login > div#formulario {
@@ -62,4 +63,77 @@ section#login > div#formulario > h1 {
 
 section#login > div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;    
+}
+
+div.campo label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #6db8b5;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none; /* não funciona */
+}
+
+section#login > div#formulario > form > div > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+section#login > div#formulario > form > div > input[type=submit]:hover {
+    background-color: #244d4b;
+}
+
+section#login > div#formulario > form > div > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    text-decoration: none;
+    background-color: #9f6fc0;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-top: 6px;
+    color: black;
+}
+
+section#login > div#formulario > form > div > a.botao:hover {
+    background-color: #5d2d7e;
 }
